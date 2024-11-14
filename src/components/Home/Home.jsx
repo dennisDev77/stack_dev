@@ -88,7 +88,7 @@ const Home = () => {
         
         <div className='flex justify-between w-full'>
         <h3 className='font-light text-base'>Nome: <span className='text-personal-gray'>{user.name}</span></h3> 
-        <span><img src={user.avatar_url} alt="Carregado foto" width='50px' height='50px' /></span>
+        
         </div>
 
         <div className='flex justify-between flex-col w-full'>
