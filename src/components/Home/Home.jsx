@@ -73,7 +73,7 @@ const Home = () => {
          <button className='bg-personal-blue-200 py-2 px-3 rounded-sm text-base font-light text-personal-white hover:opacity-80 transition' onClick={getUsers}>Chamar Agora</button>
       </form>
        
-      {
+      { 
           loading ?
           <PuffLoader
           color={'#8B8AE1'}
