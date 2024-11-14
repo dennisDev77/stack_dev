@@ -34,10 +34,11 @@
   display: block;
   width: 100%;
  }
+ 
  input,
  textarea{
   display: block;
-  width: 100%;
+  width: 90%;
   background-color:var(--input-color) ;
   outline: none;
   transition: .3s;
