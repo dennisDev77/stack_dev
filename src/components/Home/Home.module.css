@@ -1,0 +1,25 @@
+form{
+  max-width:40rem;
+  width:25rem;
+  & input{
+    outline: none;
+    width: 90%;
+  }
+  & button{
+  outline: none;
+}
+}
+ img{
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 6rem;
+}
+
+@media (max-width:49rem){
+    input{
+        max-width: 80%;
+    }
+    form{
+        max-width:100%;
+    }
+}

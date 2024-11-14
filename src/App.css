@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --font-family:'Poppins',serif;  
+  --body-color:#363467;
+  --section-color:#2E2D4E; 
+  --button-color:#8B8AE1;
+  --title-color:#f0f0f0;
+  --input-color:#363653;
+ }
+ *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+ body{
+   background: var(--body-color);
+   font-family: var(--font-family);
+   color: var(--title-color);
+   min-height: 100vh;
+   max-width: 100vw;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5{
+  display: block;
+  padding: none;
+  margin: 0;
+ }
+ img{
+  display: block;
+  width: 100%;
+ }
+ input,
+ textarea{
+  display: block;
+  width: 100%;
+  background-color:var(--input-color) ;
+  outline: none;
+  transition: .3s;
+ }
+
+ input:hover,
+ input:focus{
+        box-shadow: 0 0 1px 2px #8B8AE1;
+        background: transparent;
+ }
+ button{
+  display: block;
+  border: none;
+ }
+ p{
+  display: block;
+  padding: none;
+  margin: none;
+  line-height: 1rem;
+ }
+
+ /* Componentes Reutilizaveis */
+ .container{
+  max-width: 58rem;
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
+  margin: 0 auto;
+ }
+ ul,
+ li{
+  margin:0;
+  padding:0;
+  list-style:none
+ }
