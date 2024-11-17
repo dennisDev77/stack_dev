@@ -1,6 +1,6 @@
 form{
   max-width:40rem;
-  width:25rem;
+  width: 28rem;
   & input{
     outline: none;
   }
@@ -8,10 +8,11 @@ form{
   outline: none;
 }
 }
- span img{
+ .avatar{
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 6rem;
+  box-shadow: 0 0 0 2px #8B8AE1;
 }
 
 @media (max-width:49rem){

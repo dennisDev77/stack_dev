@@ -33,8 +33,7 @@ const Home = () => {
         setSmsErr(`Desculpe, mas nao conseguimos encontrar o usuario ${inputUser.current.value}`)
       }else{
 
-     
-      
+
       setUsers(dados)
       console.log(dados)
       console.log(response)
@@ -83,12 +82,12 @@ const Home = () => {
           data-testid="loader"
         /> 
         :
-      users.map((user)=>(
+          users.map((user)=>(
       <div className='bg-personal-black rounded-md flex flex-wrap flex-col items-center gap-3 md:w-9/12 p-3 w-full' key={user.id}>
         
         <div className='flex justify-between w-full'>
         <h3 className='font-light text-base'>Nome: <span className='text-personal-gray'>{user.name}</span></h3> 
-        <span><img src={user.avatar_url} alt="Carregado foto" width='50px' height='50px' /></span>
+        <span><img src={user.avatar_url} alt="Carregado foto" className={styles.avatar}/></span>
         </div>
 
         <div className='flex justify-between flex-col w-full'>
