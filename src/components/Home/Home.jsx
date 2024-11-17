@@ -54,7 +54,7 @@ const Home = () => {
     <>
     <section className='container flex flex-col justify-start items-center flex-wrap gap-4'>
         
-        <h2 className=' text-5xl pt-8'> <FaGithub/> </h2>
+        <h2 className=' text-5xl pt-8'> <a href='https://github.com/dennisDev77'> <FaGithub/> </a></h2>
         <form className='bg-personal-black rounded-md flex flex-wrap flex-col items-center gap-4 h-60' onSubmit={(e)=>e.preventDefault()}> 
 
          <h1 className='text-personal-white text-center text-4xl font-semibold pt-8'>Stack Dev Github</h1>
