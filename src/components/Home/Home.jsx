@@ -2,7 +2,7 @@ import React from 'react'
 import { FaGithub } from "react-icons/fa6";
 import api from '../../service/API';
 import styles from './Home.module.css'
-import PuffLoader from "react-spinners/ClipLoader";
+import ClipLoader from "react-spinners/ClipLoader";
 
 const Home = () => {
   const [users, setUsers]=React.useState([])
@@ -28,15 +28,7 @@ const Home = () => {
       const response= await api.get(`/${inputUser.current.value}`)
       
       const dados=[response.data]
-      
-      if(dados.length===0){
-        setSmsErr(`Desculpe, mas nao conseguimos encontrar o usuario ${inputUser.current.value}`)
-      }else{
-
-
       setUsers(dados)
-      console.log(dados)
-      console.log(response)
       setLoading(false)
      
       //Trabalhando na Dica
@@ -50,10 +42,9 @@ const Home = () => {
        setRepositorio(dica.dica3)
      }
 
-    }
     }catch(err){
       console.log(err.message)
-      setSmsErr(`Desculpe, mas nao conseguimos encontrar o usuario ${inputUser.current.value}`)
+      setSmsErr(err.message)
       setLoading(false)
     }
 
@@ -74,10 +65,10 @@ const Home = () => {
        
       { 
           loading ?
-          <PuffLoader
+          <ClipLoader
           color={'#8B8AE1'}
           loading={loading}
-          size={60}
+          size={50}
           aria-label="Loading Spinner"
           data-testid="loader"
         /> 
@@ -114,9 +105,8 @@ const Home = () => {
 
       </div>
 
-        ))   
-       
-      }
+        ))  
+      }   
 
     </section>
 
